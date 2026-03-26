@@ -1,0 +1,19 @@
+{
+  "datos": {
+    "nombre": "Manolo",
+    "apellidos": "Lama Martín",
+    "edad": 64
+  },
+  "examenes": [
+    {
+      "trimestre": "primero",
+      "notas": [7.5,8.5],
+      "nota_media": 8
+    },
+    {
+      "trimestre": "segundo",
+      "notas": [4.5, 6],
+      "nota_media": 5
+    }
+  ]
+}

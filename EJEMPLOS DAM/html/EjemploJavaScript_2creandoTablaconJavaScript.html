@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Creador de tabla</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <input type="button" value="Generate a table" />
+
+    <script>
+      function generateTable() {
+        // creates a <table> element and a <tbody> element
+        const tbl = document.createElement("table");
+        const tblBody = document.createElement("tbody");
+
+        // creating all cells
+        for (let i = 0; i < 3; i++) {
+          // creates a table row
+          const row = document.createElement("tr");
+
+          for (let j = 0; j < 5; j++) {
+            // Create a <td> element and a text node, make the text
+            // node the contents of the <td>, and put the <td> at
+            // the end of the table row
+            const cell = document.createElement("td");
+            const cellText = document.createTextNode(`cell in row ${i}, column ${j}`);
+            cell.append(cellText);
+            row.append(cell);
+          }
+
+          // add the row to the end of the table body
+          tblBody.append(row);
+        }
+
+        // put the <tbody> in the <table>
+        tbl.append(tblBody);
+        // appends <table> into <body>
+        document.body.append(tbl);
+        // sets the border attribute of tbl to '2'
+        tbl.setAttribute("border", "2");
+      }
+
+      document
+        .querySelector("input[type='button']")
+        .addEventListener("click", generateTable);
+    </script>
+  </body>
+
+</html>
