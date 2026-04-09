@@ -14,7 +14,7 @@ async function cargarJSON() {
     console.error("Error cargando el JSON:", error);
   }
 }
-
+  
 cargarJSON();
 
 function mostrarDatos(jsonObj) {

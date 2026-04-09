@@ -1,0 +1,28 @@
+{
+    "nombre":"Gork",
+    "informacion":{
+        "telefono":667555332,
+        "Email":"jjjjj@gmail.com"
+    },
+    "excursiones":[
+        {
+            "destino":"Malaga",
+            "Pais":"España",
+            "Precio":{
+                "tipo":"euros",
+                "valor":1300
+            },
+            "actividades":["surf", "Escalada","Submarinismo"]
+        },
+        {
+            "destino":"Honkong",
+            "Pais":"China",
+            "Precio":{
+                "tipo":"euros",
+                "valor":2600
+            },
+            "actividades":["Tirolina", "Telescopio","Teatro"]
+        }
+       
+    ]
+}
